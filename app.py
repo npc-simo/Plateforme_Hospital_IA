@@ -247,14 +247,7 @@ with st.sidebar:
         "07  ÉVALUATION",
     ])
 
-    st.markdown("<div style='height:32px'></div>", unsafe_allow_html=True)
-    sc = "#2ec4b6" if models_loaded else "#f4a261"
-    st.markdown(f"""
-    <div style='border:1px solid #1e1e1e; border-left:2px solid {sc}; padding:12px 14px; border-radius:2px;'>
-        <div style='font-size:9px; letter-spacing:2px; color:#333; text-transform:uppercase; margin-bottom:4px;'>STATUT MODÈLES</div>
-        <div style='font-size:12px; color:{sc}; font-weight:700; letter-spacing:1px;'>{"OPÉRATIONNEL" if models_loaded else "MODE DÉMO"}</div>
-        <div style='font-size:10px; color:#333; margin-top:2px; font-family:monospace;'>5 × .pkl</div>
-    </div>""", unsafe_allow_html=True)
+
 
 # ══════════════════════════════════════════════════════════
 #  PAGE 01 — DASHBOARD
